@@ -1,0 +1,56 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Glitten';
+  src: url('https://db.onlinewebfonts.com/t/1064f0ad1cb65fdab43bb592fdd786be.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer utilities {
+
+  /* Color definitions */
+  .text-gold-500 {
+    color: #d4af37;
+  }
+
+  .bg-navy-900 {
+    background-color: #0a192f;
+  }
+
+  /* Animation for the overlay */
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  .animate-fade-out {
+    animation: fadeOut 0.5s ease-out forwards;
+  }
+
+  /* Smooth transitions */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[#0a192f] text-white;
+    /* Default background */
+  }
+}
+
+
