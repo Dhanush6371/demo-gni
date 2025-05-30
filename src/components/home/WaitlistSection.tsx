@@ -83,7 +83,7 @@
 //     setIsLoading(true);
 //     setShowOtpVerification(false);
 //     try {
-//       const response = await fetch('https://server-gni.gofastapi.com/details', {
+//       const response = await fetch('https://servergni-servergni.gofastapi.com/details', {
 //         method: 'POST',
 //         headers: {
 //           'Content-Type': 'application/json',
@@ -338,7 +338,7 @@ const WaitlistSection: React.FC = () => {
 
   try {
     // 1️⃣ First, check if email exists in DB
-    const checkResponse = await fetch('https://server-gni.gofastapi.com/check-email', {
+    const checkResponse = await fetch('https://servergni-servergni.gofastapi.com/check-email', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email }),
@@ -375,7 +375,7 @@ const WaitlistSection: React.FC = () => {
     setIsLoading(true);
     setShowOtpVerification(false);
     try {
-      const response = await fetch('https://server-gni.gofastapi.com/details', {
+      const response = await fetch('https://servergni-servergni.gofastapi.com/details', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

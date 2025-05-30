@@ -302,7 +302,7 @@ const OtpVerification: React.FC<OtpVerificationProps> = ({
     setError('');
 
     try {
-      const response = await fetch('https://server-gni.gofastapi.com/sendotp', {
+      const response = await fetch('https://servergni-servergni.gofastapi.com/sendotp', {
         method: 'POST',
         body: JSON.stringify({ email }),
         headers: { 'Content-Type': 'application/json' },
@@ -341,7 +341,7 @@ const OtpVerification: React.FC<OtpVerificationProps> = ({
     setError('');
 
     try {
-      const response = await fetch('https://server-gni.gofastapi.com/verify', {
+      const response = await fetch('https://servergni-servergni.gofastapi.com/verify', {
         method: 'POST',
         body: JSON.stringify({ email, otp: otpCheck }),
         headers: { 'Content-Type': 'application/json' },
