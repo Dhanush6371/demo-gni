@@ -85,7 +85,7 @@ const WaitlistSection: React.FC = () => {
 
   try {
     // 1️⃣ First, check if email exists in DB
-    const checkResponse = await fetch('http://localhost:5000/check-email', {
+    const checkResponse = await fetch('https://servergni-servergni.gofastapi.com/check-email', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email }),
@@ -122,7 +122,7 @@ const WaitlistSection: React.FC = () => {
     setIsLoading(true);
     setShowOtpVerification(false);
     try {
-      const response = await fetch('http://localhost:5000/details', {
+      const response = await fetch('https://servergni-servergni.gofastapi.com/details', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -251,7 +251,7 @@ const WaitlistSection: React.FC = () => {
         <li>We will store your email address and package preference for communication purposes</li>
         <li>You will receive emails about our launch and service updates</li>
         <li>We will not share your information with third parties without your consent</li>
-        <li>Our full <a href="http://localhost:5173/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">privacy policy</a> can be found on our website</li>
+        <li>Our full <a href="https://demo-gni.gofastapi.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">privacy policy</a> can be found on our website</li>
       </ul>
     </div>
     

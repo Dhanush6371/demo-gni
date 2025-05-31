@@ -44,7 +44,7 @@ const OtpVerification: React.FC<OtpVerificationProps> = ({
 
   const checkEmailExists = async (email: string): Promise<boolean> => {
     try {
-      const response = await fetch('http://localhost:5000/check-email', {
+      const response = await fetch('https://servergni-servergni.gofastapi.com/check-email', {
         method: 'POST',
         body: JSON.stringify({ email }),
         headers: { 'Content-Type': 'application/json' },
@@ -119,7 +119,7 @@ const OtpVerification: React.FC<OtpVerificationProps> = ({
         return;
       }
 
-      const response = await fetch('http://localhost:5000/sendotp', {
+      const response = await fetch('https://servergni-servergni.gofastapi.com/sendotp', {
         method: 'POST',
         body: JSON.stringify({ email }),
         headers: { 'Content-Type': 'application/json' },
@@ -167,7 +167,7 @@ const OtpVerification: React.FC<OtpVerificationProps> = ({
     setError('');
 
     try {
-      const response = await fetch('http://localhost:5000/verify', {
+      const response = await fetch('https://servergni-servergni.gofastapi.com/verify', {
         method: 'POST',
         body: JSON.stringify({ email, otp: otpCheck }),
         headers: { 'Content-Type': 'application/json' },
