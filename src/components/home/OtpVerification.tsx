@@ -190,6 +190,14 @@ const OtpVerification: React.FC<OtpVerificationProps> = ({
     setError('');
   };
 
+  const handleChangeEmail = () => {
+    setIsOtpSent(false);
+    setError('');
+    setSuccess(false);
+    setOtp(['', '', '', '']); // Reset OTP fields
+    setShowEmailEdit(true);
+  };
+
   return (
     <div className="otp-verification-modal">
       <div className="otp-verification-content">
@@ -206,7 +214,7 @@ const OtpVerification: React.FC<OtpVerificationProps> = ({
         <p className="otp-text">
           {isOtpSent
             ? 'Enter the 4-digit OTP sent to your email'
-            : ''}
+            : 'Enter your email to receive an OTP'}
         </p>
 
         {!isOtpSent ? (
@@ -304,11 +312,7 @@ const OtpVerification: React.FC<OtpVerificationProps> = ({
                 Resend OTP {resendDisabled && `(${countdown}s)`}
               </button>
               <button
-                onClick={() => {
-                  setIsOtpSent(false);
-                  setError('');
-                  setShowEmailEdit(true);
-                }}
+                onClick={handleChangeEmail}
                 className="otp-btn otp-btn-secondary"
                 disabled={loading}
               >

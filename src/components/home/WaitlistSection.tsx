@@ -12,26 +12,35 @@ import OtpVerification from './OtpVerification';
 
 // Spinner component
 const Spinner = () => (
-  <svg
-    className="animate-spin h-5 w-5 text-grey-900"
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-  >
-    <circle
-      className="opacity-25"
-      cx="12"
-      cy="12"
-      r="10"
-      stroke="currentColor"
-      strokeWidth="4"
-    />
-    <path
-      className="opacity-75"
-      fill="currentColor"
-      d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
-    />
-  </svg>
+  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#1F5AAA' }}>
+    <svg
+      style={{
+        width: '16px',
+        height: '16px',
+        animation: 'spin 1s linear infinite',
+        marginRight: '6px'
+      }}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      <circle
+        cx="12"
+        cy="12"
+        r="10"
+        stroke="currentColor"
+        strokeWidth="2"
+        fill="none"
+        strokeDasharray="80"
+        strokeDashoffset="60"
+      />
+      <style>{`
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+      `}</style>
+    </svg>
+  </div>
 );
 
 const WaitlistSection: React.FC = () => {

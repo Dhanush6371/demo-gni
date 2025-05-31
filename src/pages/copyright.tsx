@@ -284,23 +284,7 @@ const CopyrightPolicy: React.FC = () => {
                   </div>
 
                   {/* CTA Section */}
-                  <div className="bg-blue-900 px-8 py-10 md:px-10">
-                    <div className="max-w-3xl mx-auto text-center">
-                      <h3 className="text-2xl font-bold text-white mb-3">Need Copyright Permissions?</h3>
-                      <p className="text-gray-300 mb-6">
-                        Contact our licensing team for inquiries about using our content, trademarks, or other intellectual property.
-                      </p>
-                      <a 
-                        href="mailto:licensing@G-Ni.com" 
-                        className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-white hover:bg-gray-100 transition-colors"
-                      >
-                        Request Permission
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>

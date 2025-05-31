@@ -216,6 +216,38 @@ import WaitlistSection from '../components/home/WaitlistSection';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { ContactFormData } from '../types';
 
+const Spinner = () => (
+  <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: 'currentColor' }}>
+    <svg
+      style={{
+        width: '16px',
+        height: '16px',
+        animation: 'spin 1s linear infinite',
+        marginRight: '6px'
+      }}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      <circle
+        cx="12"
+        cy="12"
+        r="10"
+        stroke="currentColor"
+        strokeWidth="2"
+        fill="none"
+        strokeDasharray="80"
+        strokeDashoffset="60"
+      />
+      <style>{`
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+      `}</style>
+    </svg>
+  </div>
+);
+
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState<ContactFormData>({
     name: '',
@@ -225,9 +257,9 @@ const Contact: React.FC = () => {
   
   const [errors, setErrors] = useState<Partial<ContactFormData>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [isLoading, setIsLoading] = useState(false); // Add loading state
-  const [submitError, setSubmitError] = useState(''); // Add error state
-  
+  const [isLoading, setIsLoading] = useState(false);
+  const [submitError, setSubmitError] = useState('');
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
@@ -268,7 +300,6 @@ const Contact: React.FC = () => {
     setSubmitError('');
 
     try {
-      // Replace this URL with your actual backend endpoint
       const response = await fetch('https://servergni-servergni.gofastapi.com/contact', {
         method: 'POST',
         headers: {
@@ -435,10 +466,17 @@ const Contact: React.FC = () => {
                     <Button 
                       variant="secondary" 
                       type="submit" 
-                      className="w-full"
+                      className="w-full flex items-center justify-center"
                       disabled={isLoading}
                     >
-                      {isLoading ? 'Sending...' : 'Send Message'}
+                      {isLoading ? (
+                        <>
+                          <Spinner />
+                          
+                        </>
+                      ) : (
+                        'Send Message'
+                      )}
                     </Button>
                   </form>
                 )}
@@ -448,7 +486,6 @@ const Contact: React.FC = () => {
         </Container>
       </Section>
       <WaitlistSection />
-      
     </>
   );
 };
