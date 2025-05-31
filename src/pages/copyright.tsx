@@ -45,7 +45,7 @@ const CopyrightPolicy: React.FC = () => {
                     </nav>
                     <div className="mt-8 pt-6 border-t border-gray-100">
                       <a 
-                        href="/privacy" 
+                        href="/privacy-policy" 
                         className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800"
                       >
                         View Privacy Policy
