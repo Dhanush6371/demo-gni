@@ -268,7 +268,7 @@ const CopyrightPolicy: React.FC = () => {
                             <div className="ml-4">
                               <h3 className="text-lg font-semibold text-gray-900">Legal Department</h3>
                               <p className="mt-1 text-gray-700">
-                                <a href="mailto:legal@G-Ni.com" className="text-blue-600 hover:text-blue-800">legal@G-Ni.com</a>
+                                <a href="mailto:legal@G-Ni.com" className="text-blue-600 hover:text-blue-800">contact@gni.com</a>
                               </p>
                               <p className="mt-1 text-gray-700">
                                 <a href="tel:+18005551234" className="text-blue-600 hover:text-blue-800">+1 (800) 555-1234</a>

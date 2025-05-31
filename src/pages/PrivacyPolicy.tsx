@@ -325,7 +325,7 @@ const PrivacyPolicy: React.FC = () => {
                             <div className="ml-4">
                               <h3 className="text-lg font-semibold text-gray-900">Privacy Team</h3>
                               <p className="mt-1 text-gray-700">
-                                <a href="mailto:hello@G-Ni.com" className="text-blue-600 hover:text-blue-800">hello@G-Ni.com</a>
+                                <a href="mailto:hello@G-Ni.com" className="text-blue-600 hover:text-blue-800">contact@gni.com</a>
                               </p>
                               <p className="mt-2 text-gray-500 text-sm">
                                 We typically respond within 1-2 business days.
@@ -338,23 +338,7 @@ const PrivacyPolicy: React.FC = () => {
                   </div>
 
                   {/* CTA Section */}
-                  <div className="bg-gray-900 px-8 py-10 md:px-10">
-                    <div className="max-w-3xl mx-auto text-center">
-                      <h3 className="text-2xl font-bold text-white mb-3">Have Privacy Concerns?</h3>
-                      <p className="text-gray-300 mb-6">
-                        Our dedicated privacy team is here to address any questions or concerns you may have about your personal data.
-                      </p>
-                      <a 
-                        href="mailto:privacy@G-Ni.com" 
-                        className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-white hover:bg-gray-100 transition-colors"
-                      >
-                        Contact Privacy Team
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>
