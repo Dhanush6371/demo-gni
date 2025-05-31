@@ -41,7 +41,7 @@ const Footer: React.FC<FooterProps> = ({ navItems }) => {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact</h4>
+            <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <address className="not-italic text-white space-y-2">
               <p>Email: contact@gniapp.com</p>
               <p>Phone: +1 605 605 1233</p>

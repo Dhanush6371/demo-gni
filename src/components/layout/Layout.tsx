@@ -13,7 +13,7 @@ const navbarItems: NavItem[] = [
   { title: 'Services', path: '/#services' },
   { title: 'About', path: '/about' },
   { title: 'FAQ', path: '/faq' },
-  { title: 'Contact', path: '/contact' },
+  { title: 'Contact Us', path: '/contact' },
 ];
 
 // Footer items (including Privacy Policy)

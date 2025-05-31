@@ -56,7 +56,7 @@ const AboutPage: React.FC = () => { // Renamed component to avoid conflict with 
                   {
                     icon: Globe,
                     title: "Our Impact",
-                    description: "We remove logistical hurdles and provide AI-powered guidance so that students, travelers, and professionals worldwide can begin their journeys smoothly, confidently, and fully connected."
+                    description: "AI-powered guidance helps students, travelers, and professionals start journeys"
                   }
                 ].map((item, index) => (
                   <div key={index} className="flex flex-col items-center text-center p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
@@ -101,15 +101,6 @@ const AboutPage: React.FC = () => { // Renamed component to avoid conflict with 
               <p>
                 Be first to experience friction‑free relocation. Join the wait‑list and unlock early‑access pricing, priority support and beta‑only features when the G‑NI app goes live.
               </p>
-            </div>
-            
-            <div className="mt-10 text-center">
-              <a 
-                href="#join-waitlist" 
-                className="inline-block bg-white text-blue-900 px-6 py-3 rounded-md font-semibold  transition-colors"
-              >
-                Join Our Waitlist
-              </a>
             </div>
           </div>
         </Container>

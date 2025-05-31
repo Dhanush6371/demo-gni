@@ -269,7 +269,7 @@ const Contact: React.FC = () => {
 
     try {
       // Replace this URL with your actual backend endpoint
-      const response = await fetch('https://servergni-servergni.gofastapi.com/contact', {
+      const response = await fetch('http://localhost:5000/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

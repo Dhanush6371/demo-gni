@@ -101,7 +101,7 @@
 }
 
 .otp-input:focus {
-  border-color: #28a745;
+  border-color: #1F5AAA;
   box-shadow: 0 0 10px rgba(40, 167, 69, 0.25);
 }
 
@@ -117,7 +117,7 @@
 }
 
 .otp-btn-primary {
-  background-color: #007bff;
+  background-color: #1F5AAA;
   color: #fff;
 }
 
@@ -127,17 +127,17 @@
 }
 
 .otp-btn-success {
-  background-color: #28a745;
+  background-color: #1F5AAA;
   color: #fff;
 }
 
 .otp-btn-success:hover {
-  background-color: #1e7e34;
+  background-color: #1F5AAA;
   transform: scale(1.05);
 }
 
 .otp-btn-secondary {
-  background-color: #6c757d;
+  background-color: #1F5AAA;
   color: #fff;
 }
 
@@ -146,10 +146,17 @@
   transform: scale(1.05);
 }
 
+/* Loading State Button */
+.otp-btn-loading {
+  background-color: transparent !important;
+  
+  color: #1F5AAA !important;
+}
+
 .otp-resend-btn {
   background: none;
   border: none;
-  color: #007bff;
+  color: #1F5AAA;
   cursor: pointer;
   font-size: 0.9rem;
   margin-right: 10px;
@@ -176,7 +183,7 @@
 
 /* Status Messages */
 .otp-success-message {
-  color: #28a745;
+  color: black;
   font-weight: bold;
   margin-top: 10px;
 }
@@ -225,18 +232,19 @@
   transform: scale(1.1);
 }
 
-
+/* Spinner Styles */
 .otp-spinner-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #1F5AAA;
 }
 
 .otp-spinner {
   width: 16px;
   height: 16px;
-  border: 2px solid #fff;
-  border-top: 2px solid #3498db;
+  border: 2px solid #1F5AAA;
+  border-top: 2px solid transparent;
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin-right: 6px;
@@ -246,8 +254,54 @@
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* Email Edit Container */
+.email-edit-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.email-edit-btn {
+  background: none;
+  border: none;
+  color: #1F5AAA;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+}
+
+.email-edit-btn:hover {
+  color: #0d4b9e;
+  background-color: rgba(31, 90, 170, 0.1);
+}
+
+.email-edit-btn:disabled {
+  color: #ced4da;
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+.email-edit-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Update the prefilled email styles */
+.otp-prefilled-email p:last-child {
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
 }

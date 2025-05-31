@@ -106,14 +106,15 @@ import { userGroups } from '../../data/userGroups';
 import * as LucideIcons from 'lucide-react';
 
 // Import local images
-import studentImage from '../../assets/images/students.jpg';
+
+import studentImageCrop from '../../assets/images/studentsCrop.jpg';
 import touristImage from '../../assets/images/tourists.jpeg';
 import businessImage from '../../assets/images/bussiess.jpg';
 
 const ServiceHighlights: React.FC = () => {
   // Image mapping object
   const genieImages = {
-    students: studentImage,
+    students: studentImageCrop,
     tourists: touristImage,
     business: businessImage
   };

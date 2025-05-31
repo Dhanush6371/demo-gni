@@ -53,7 +53,17 @@ const PrivacyPolicy: React.FC = () => {
                       <a href="#policy-changes" className="block text-gray-700 hover:text-blue-600">7. Policy Changes</a>
                       <a href="#contact-us" className="block text-gray-700 hover:text-blue-600">8. Contact Us</a>
                     </nav>
-                    
+                    <div className="mt-8 pt-6 border-t border-gray-100">
+                      <a 
+                        href="/terms" 
+                        className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800"
+                      >
+                        View Terms of Service
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

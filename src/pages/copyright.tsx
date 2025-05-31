@@ -6,7 +6,7 @@ const CopyrightPolicy: React.FC = () => {
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
-      <Section className="pt-32 pb-20 bg-gradient-to-r from-blue-900 to-indigo-900">
+      <Section className="pt-32 pb-20 bg-blue-900">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center mb-4 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm">
@@ -22,19 +22,10 @@ const CopyrightPolicy: React.FC = () => {
         </Container>
       </Section>
 
-      {/* Last Updated */}
-      <div className="bg-white border-b border-gray-200 py-4">
-        <Container>
-          <div className="max-w-4xl mx-auto text-right">
-            <p className="text-sm text-gray-500">
-              <span className="font-medium">Last Updated:</span> February 2, 2022
-            </p>
-          </div>
-        </Container>
-      </div>
+      
 
       {/* Main Content */}
-      <Section className="py-16">
+      <Section className="py-16 bg-blue-900">
         <Container>
           <div className="max-w-5xl mx-auto">
             <div className="flex flex-col lg:flex-row gap-12">
@@ -293,7 +284,7 @@ const CopyrightPolicy: React.FC = () => {
                   </div>
 
                   {/* CTA Section */}
-                  <div className="bg-gray-900 px-8 py-10 md:px-10">
+                  <div className="bg-blue-900 px-8 py-10 md:px-10">
                     <div className="max-w-3xl mx-auto text-center">
                       <h3 className="text-2xl font-bold text-white mb-3">Need Copyright Permissions?</h3>
                       <p className="text-gray-300 mb-6">
@@ -316,6 +307,16 @@ const CopyrightPolicy: React.FC = () => {
           </div>
         </Container>
       </Section>
+      {/* Last Updated */}
+      <div className="bg-blue-900 border-b border-gray-200 py-4">
+        <Container>
+          <div className="max-w-4xl mx-auto text-right">
+            <p className="text-sm text-white-500">
+              <span className="font-medium">Last Updated:</span> February 2, 2022
+            </p>
+          </div>
+        </Container>
+      </div>
     </div>
   );
 };
