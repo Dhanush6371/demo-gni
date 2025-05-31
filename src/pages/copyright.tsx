@@ -35,7 +35,7 @@ const CopyrightPolicy: React.FC = () => {
                   <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
                     <h3 className="text-lg font-semibold text-gray-900 mb-4">Policy Sections</h3>
                     <nav className="space-y-2">
-                      <a href="#copyright-ownership" className="block text-blue-600 hover:text-blue-800 font-medium">1. Copyright Ownership</a>
+                      <a href="#copyright-ownership" className="block text-gray-700 hover:text-blue-600">1. Copyright Ownership</a>
                       <a href="#permitted-use" className="block text-gray-700 hover:text-blue-600">2. Permitted Use</a>
                       <a href="#prohibited-use" className="block text-gray-700 hover:text-blue-600">3. Prohibited Use</a>
                       <a href="#dmca" className="block text-gray-700 hover:text-blue-600">4. DMCA Policy</a>

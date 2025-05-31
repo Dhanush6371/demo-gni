@@ -194,7 +194,7 @@ const OtpVerification: React.FC<OtpVerificationProps> = ({
     setIsOtpSent(false);
     setError('');
     setSuccess(false);
-    setOtp(['', '', '', '']); // Reset OTP fields
+    setOtp(['', '', '', '']);
     setShowEmailEdit(true);
   };
 
@@ -291,13 +291,12 @@ const OtpVerification: React.FC<OtpVerificationProps> = ({
             </div>
             <button
               onClick={handleVerify}
-              className="otp-btn otp-btn-success"
+              className={`otp-btn ${loading ? 'otp-btn-loading' : 'otp-btn-success'}`}
               disabled={loading}
             >
               {loading ? (
                 <div className="otp-spinner-container">
                   <div className="otp-spinner"></div>
-                  <span className="ml-2">Verifying...</span>
                 </div>
               ) : (
                 'Verify OTP'

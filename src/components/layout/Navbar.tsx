@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 import Container from '../ui/Container';
 import { NavItem } from '../../types';
 import Button from '../ui/Button';
@@ -12,8 +13,13 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ navItems }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
   
-  // Filter out the "Services" item
+  // Pages where the waitlist button should be hidden
+  const restrictedPaths = ['/privacy-policy', '/copyright'];
+  const showWaitlistButton = !restrictedPaths.includes(location.pathname);
+  
+  // Filter out the "Services" item if needed
   const filteredNavItems = navItems;
   
   useEffect(() => {
@@ -53,11 +59,13 @@ const Navbar: React.FC<NavbarProps> = ({ navItems }) => {
                 </li>
               ))}
             </ul>
-            <a href="#join-waitlist">
-              <Button variant="primary" className={isScrolled ? '' : 'opacity-0 pointer-events-none'}>
-                Join Waitlist
-              </Button>
-            </a>
+            {showWaitlistButton && (
+              <a href="#join-waitlist">
+                <Button variant="primary" className={isScrolled ? '' : 'opacity-0 pointer-events-none'}>
+                  Join Waitlist
+                </Button>
+              </a>
+            )}
           </div>
           
           {/* Mobile Menu Toggle */}
@@ -86,9 +94,11 @@ const Navbar: React.FC<NavbarProps> = ({ navItems }) => {
                 </li>
               ))}
             </ul>
-            <a href="#join-waitlist" onClick={() => setIsMenuOpen(false)}>
-              <Button className="w-full bg-blue text-white hover:bg-white">Join Waitlist</Button>
-            </a>
+            {showWaitlistButton && (
+              <a href="#join-waitlist" onClick={() => setIsMenuOpen(false)}>
+                <Button className="w-full bg-blue text-white hover:bg-white">Join Waitlist</Button>
+              </a>
+            )}
           </div>
         )}
       </Container>

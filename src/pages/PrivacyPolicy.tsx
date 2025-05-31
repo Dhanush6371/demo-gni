@@ -44,7 +44,7 @@ const PrivacyPolicy: React.FC = () => {
                   <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
                     <h3 className="text-lg font-semibold text-gray-900 mb-4">Policy Sections</h3>
                     <nav className="space-y-2">
-                      <a href="#information-we-collect" className="block text-blue-600 hover:text-blue-800 font-medium">1. Information We Collect</a>
+                      <a href="#information-we-collect" className="block text-gray-700 hover:text-blue-600">1. Information We Collect</a>
                       <a href="#how-we-use" className="block text-gray-700 hover:text-blue-600">2. How We Use Information</a>
                       <a href="#information-sharing" className="block text-gray-700 hover:text-blue-600">3. Information Sharing</a>
                       <a href="#advertising-analytics" className="block text-gray-700 hover:text-blue-600">4. Advertising & Analytics</a>
