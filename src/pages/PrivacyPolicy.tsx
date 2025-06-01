@@ -313,15 +313,17 @@ const PrivacyPolicy: React.FC = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                               </svg>
                             </div>
-                            <div className="ml-4">
-                              <h3 className="text-lg font-semibold text-gray-900">Privacy Team</h3>
-                              <p className="mt-1 text-gray-700">
-                                <a href="mailto:contact@gniapp.com" className="text-blue-600 hover:text-blue-800">contact@gniapp.com</a>
-                              </p>
-                              <p className="mt-2 text-gray-500 text-sm">
-                                We typically respond within 1-2 business days.
-                              </p>
-                            </div>
+                            <div className="ml-2 sm:ml-4">
+  <h3 className="text-base sm:text-lg font-semibold text-gray-900">Privacy Team</h3>
+  <p className="mt-1 text-sm sm:text-base text-gray-700 break-all">
+    <a href="mailto:contact@gniapp.com" className="text-blue-600 hover:text-blue-800">
+      contact@gniapp.com
+    </a>
+  </p>
+  <p className="mt-1 sm:mt-2 text-xs sm:text-sm text-gray-500">
+    We typically respond within 1-2 business days.
+  </p>
+</div>
                           </div>
                         </div>
                       </div>
