@@ -4,9 +4,9 @@ import Section from '../components/ui/Section';
 
 const PrivacyPolicy: React.FC = () => {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-blue-900">
       {/* Hero Section */}
-      <Section className="pt-32 pb-20 bg-gradient-to-r from-blue-900 to-indigo-900">
+      <Section className="pt-32 pb-20 bg-gradient-to-r bg-blue-900">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center mb-4 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm">
@@ -23,15 +23,7 @@ const PrivacyPolicy: React.FC = () => {
       </Section>
 
       {/* Last Updated */}
-      <div className="bg-white border-b border-gray-200 py-4">
-        <Container>
-          <div className="max-w-4xl mx-auto text-right">
-            <p className="text-sm text-gray-500">
-              <span className="font-medium">Last Updated:</span> February 2, 2022
-            </p>
-          </div>
-        </Container>
-      </div>
+      
 
       {/* Main Content */}
       <Section className="py-16">
@@ -53,7 +45,6 @@ const PrivacyPolicy: React.FC = () => {
                       <a href="#policy-changes" className="block text-gray-700 hover:text-blue-600">7. Policy Changes</a>
                       <a href="#contact-us" className="block text-gray-700 hover:text-blue-600">8. Contact Us</a>
                     </nav>
-                    
                   </div>
                 </div>
               </div>
@@ -78,9 +69,9 @@ const PrivacyPolicy: React.FC = () => {
                               <svg className="h-5 w-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                               </svg>
-                              <span>Name, email address, postal address, phone number</span>
+                              <span>Email address</span>
                             </li>
-                            <li className="flex items-start">
+                            {/* <li className="flex items-start">
                               <svg className="h-5 w-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                               </svg>
@@ -91,7 +82,7 @@ const PrivacyPolicy: React.FC = () => {
                                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                               </svg>
                               <span>Social Security Number, government-issued ID (for verification)</span>
-                            </li>
+                            </li> */}
                           </ul>
                         </div>
                         <div>
@@ -136,7 +127,7 @@ const PrivacyPolicy: React.FC = () => {
                       <div className="pl-16">
                         <ul className="space-y-3 text-gray-700">
                           {[
-                            "Provide and improve our Services, process transactions",
+                            // "Provide and improve our Services, process transactions",
                             "Verify your identity and conduct background/credit checks",
                             "Send technical notices, updates, and security alerts",
                             "Respond to your inquiries and provide customer support",
@@ -169,8 +160,8 @@ const PrivacyPolicy: React.FC = () => {
                         <div className="grid md:grid-cols-2 gap-4 mb-6">
                           {[
                             "Service providers (background check services, payment processors)",
-                            "Landlords and property owners",
-                            "Professional advisors (legal, financial)",
+                            // "Landlords and property owners",
+                            // "Professional advisors (legal, financial)",
                             "Government authorities when required by law",
                             "Affiliated companies under common ownership",
                             "Successor entities in case of merger or acquisition"
@@ -212,7 +203,7 @@ const PrivacyPolicy: React.FC = () => {
                         <p className="text-gray-700 mb-4">
                           We use third-party analytics services and advertising networks that may collect information about your use of our Services and other websites/applications.
                         </p>
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                        {/* <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <p className="text-gray-700 mb-2">
                             <span className="font-medium">Opt-out:</span> You can opt out of interest-based advertising at:
                           </p>
@@ -227,7 +218,7 @@ const PrivacyPolicy: React.FC = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                             </svg>
                           </a>
-                        </div>
+                        </div> */}
                       </div>
                     </section>
 
@@ -277,15 +268,15 @@ const PrivacyPolicy: React.FC = () => {
                           <div>
                             <h3 className="text-lg font-semibold text-gray-800 mb-3">Communications</h3>
                             <p className="text-gray-700">
-                              Opt out of promotional emails by following unsubscribe instructions or emailing <span className="font-medium text-blue-600">hello@G-Ni.com</span>. You may still receive transactional messages.
+                              Opt out of promotional emails by following unsubscribe instructions or emailing <span className="font-medium text-blue-600">contact@gniapp.com</span>. You may still receive transactional messages.
                             </p>
                           </div>
-                          <div>
+                          {/* <div>
                             <h3 className="text-lg font-semibold text-gray-800 mb-3">Text Messages</h3>
                             <p className="text-gray-700">
                               Reply <span className="font-medium">"STOP"</span> to opt out of marketing texts. Note that operational texts may still be sent.
                             </p>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     </section>
@@ -325,7 +316,7 @@ const PrivacyPolicy: React.FC = () => {
                             <div className="ml-4">
                               <h3 className="text-lg font-semibold text-gray-900">Privacy Team</h3>
                               <p className="mt-1 text-gray-700">
-                                <a href="mailto:hello@G-Ni.com" className="text-blue-600 hover:text-blue-800">contact@gni.com</a>
+                                <a href="mailto:contact@gniapp.com" className="text-blue-600 hover:text-blue-800">contact@gniapp.com</a>
                               </p>
                               <p className="mt-2 text-gray-500 text-sm">
                                 We typically respond within 1-2 business days.
@@ -336,16 +327,23 @@ const PrivacyPolicy: React.FC = () => {
                       </div>
                     </section>
                   </div>
-
-                  {/* CTA Section */}
-                  
                 </div>
               </div>
             </div>
           </div>
         </Container>
       </Section>
+      <div className="bg-blue-900 border-b border-gray-200 py-4">
+        <Container>
+          <div className="max-w-4xl mx-auto text-right">
+            <p className="text-sm text-white-500">
+              <span className="font-medium">Last Updated:</span> February 2, 2022
+            </p>
+          </div>
+        </Container>
+      </div>
     </div>
+    
   );
 };
 

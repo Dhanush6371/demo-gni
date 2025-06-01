@@ -39,13 +39,13 @@ const CopyrightPolicy: React.FC = () => {
                       <a href="#permitted-use" className="block text-gray-700 hover:text-blue-600">2. Permitted Use</a>
                       <a href="#prohibited-use" className="block text-gray-700 hover:text-blue-600">3. Prohibited Use</a>
                       <a href="#dmca" className="block text-gray-700 hover:text-blue-600">4. DMCA Policy</a>
-                      <a href="#trademarks" className="block text-gray-700 hover:text-blue-600">5. Trademarks</a>
-                      <a href="#third-party" className="block text-gray-700 hover:text-blue-600">6. Third-Party Content</a>
-                      <a href="#contact" className="block text-gray-700 hover:text-blue-600">7. Contact</a>
+                      {/* <a href="#trademarks" className="block text-gray-700 hover:text-blue-600">5. Trademarks</a> */}
+                      <a href="#third-party" className="block text-gray-700 hover:text-blue-600">5. Third-Party Content</a>
+                      <a href="#contact" className="block text-gray-700 hover:text-blue-600">6. Contact</a>
                     </nav>
                     <div className="mt-8 pt-6 border-t border-gray-100">
                       <a 
-                        href="/privacy-policy" 
+                        href="/privacy-Policy" 
                         className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800"
                       >
                         View Privacy Policy
@@ -172,7 +172,7 @@ const CopyrightPolicy: React.FC = () => {
                               <svg className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                               </svg>
-                              <span>copyright@G-Ni.com</span>
+                              <span>contact@gniapp.com</span>
                             </div>
                           </div>
                         </div>
@@ -192,7 +192,7 @@ const CopyrightPolicy: React.FC = () => {
                         </div>
                       </div>
                     </section>
-
+{/* 
                     <section id="trademarks" className="mb-12">
                       <div className="flex items-start mb-6">
                         <div className="flex-shrink-0 bg-blue-100 rounded-lg p-3 mr-4">
@@ -222,12 +222,12 @@ const CopyrightPolicy: React.FC = () => {
                           </div>
                         </div>
                       </div>
-                    </section>
+                    </section> */}
 
                     <section id="third-party" className="mb-12">
                       <div className="flex items-start mb-6">
                         <div className="flex-shrink-0 bg-blue-100 rounded-lg p-3 mr-4">
-                          <span className="text-blue-800 text-xl font-bold">6</span>
+                          <span className="text-blue-800 text-xl font-bold">5</span>
                         </div>
                         <h2 className="text-2xl font-bold text-gray-900">Third-Party Content</h2>
                       </div>
@@ -250,7 +250,7 @@ const CopyrightPolicy: React.FC = () => {
                     <section id="contact">
                       <div className="flex items-start mb-6">
                         <div className="flex-shrink-0 bg-blue-100 rounded-lg p-3 mr-4">
-                          <span className="text-blue-800 text-xl font-bold">7</span>
+                          <span className="text-blue-800 text-xl font-bold">6</span>
                         </div>
                         <h2 className="text-2xl font-bold text-gray-900">Contact Information</h2>
                       </div>
@@ -268,13 +268,10 @@ const CopyrightPolicy: React.FC = () => {
                             <div className="ml-4">
                               <h3 className="text-lg font-semibold text-gray-900">Legal Department</h3>
                               <p className="mt-1 text-gray-700">
-                                <a href="mailto:legal@G-Ni.com" className="text-blue-600 hover:text-blue-800">contact@gni.com</a>
+                                <a href="mailto:contact@gniapp.com" className="text-blue-600 hover:text-blue-800">contact@gniapp.com</a>
                               </p>
                               <p className="mt-1 text-gray-700">
-                                <a href="tel:+18005551234" className="text-blue-600 hover:text-blue-800">+1 (800) 555-1234</a>
-                              </p>
-                              <p className="mt-2 text-gray-500 text-sm">
-                                For legal correspondence only. Customer service inquiries should be directed to <a href="mailto:support@G-Ni.com" className="text-blue-600">support@G-Ni.com</a>.
+                                <a href="tel:+18005551234" className="text-blue-600 hover:text-blue-800">+1 605 605 1233</a>
                               </p>
                             </div>
                           </div>
@@ -282,9 +279,6 @@ const CopyrightPolicy: React.FC = () => {
                       </div>
                     </section>
                   </div>
-
-                  {/* CTA Section */}
-                  
                 </div>
               </div>
             </div>
