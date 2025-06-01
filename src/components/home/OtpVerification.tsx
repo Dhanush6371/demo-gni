@@ -165,7 +165,6 @@ const OtpVerification: React.FC<OtpVerificationProps> = ({
 
     setLoading(true);
     setError('');
-
     try {
       const response = await fetch('https://servergni-servergni.gofastapi.com/verify', {
         method: 'POST',
